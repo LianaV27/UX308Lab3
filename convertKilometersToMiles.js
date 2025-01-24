@@ -5,9 +5,9 @@ function convertKilometersToMiles(kilometers){
     return miles;
 }
 
-/*let kilometers = 150;
+let kilometers = 150;
 let miles = convertKilometersToMiles(kilometers);
 
-console.log(`${kilometers} kilometers is ${miles} miles`);*/
+console.log(`${kilometers} kilometers is ${miles} miles`);
 
 export {convertKilometersToMiles}
