@@ -9,20 +9,32 @@
 // 60% humidity & above is high, 59% humidity & below is low
 
 // check temp & humidity
-let temp = 20;
+// suggest clothing based on weather
+
+let temp = 4;
 let humid = 60;
 
+function suggestClothing(humid, temp) {
+  let clothing;
+   if (humid >= 60 && temp >= 4) {
+      //Rainy
+     clothing = "rain coat";
+      return "rain coat";
 
-function checkWeather(){
-   if(humid >= 60 && temp >= 4){
-     // rainy
-    } else if(humid >= 60 && temp >=4){
-    // snow
-   } else if (humid <=59 && temp >= 4){
+   } else if (humid >= 60 && temp <= 3) {
+      // Snowy
+      clothing = "winter jacket";
 
+   } else if (humid <= 59 && temp >= 4) {
+      // Hot
+    clothing = "t-shirt";
+
+   } else if (humid <= 59 && temp <= 3) {
+      // Cold
+     clothing = "sweater";
    }
+   return clothing;
+}
 
-console.log(`It is ${temp} degrees and ${humid} % humidity today. It is rainy today.`);
+export {suggestClothing}
 
-// determine weather based on temp & humidity
-// suggest clothing based on weather
