@@ -15,10 +15,10 @@ let temp = 4;
 let humid = 60;
 
 function suggestClothing(humid, temp) {
-  let clothing;
+   let clothing;
    if (humid >= 60 && temp >= 4) {
       //Rainy
-     clothing = "rain coat";
+      clothing = "rain coat";
       return "rain coat";
 
    } else if (humid >= 60 && temp <= 3) {
@@ -27,14 +27,14 @@ function suggestClothing(humid, temp) {
 
    } else if (humid <= 59 && temp >= 4) {
       // Hot
-    clothing = "t-shirt";
+      clothing = "t-shirt";
 
    } else if (humid <= 59 && temp <= 3) {
       // Cold
-     clothing = "sweater";
+      clothing = "sweater";
    }
    return clothing;
 }
 
-export {suggestClothing}
+export { suggestClothing }
 
